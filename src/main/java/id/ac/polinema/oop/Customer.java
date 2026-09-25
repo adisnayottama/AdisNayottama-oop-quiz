@@ -23,8 +23,6 @@ public class Customer {
     public Customer(String customerId, String name) {
         this.id = id;
         this.name = name;
-
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getCustomerId() {
@@ -42,7 +40,8 @@ public class Customer {
      * @param name new name
      */
     public void setName(String name) {
-        if (condition) {
+        if (name != null && !name.isBlank()) {
+            this.name = name;
             
         }
         throw new UnsupportedOperationException("Not implemented yet");
