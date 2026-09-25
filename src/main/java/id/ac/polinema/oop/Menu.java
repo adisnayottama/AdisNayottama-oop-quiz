@@ -16,7 +16,7 @@ package id.ac.polinema.oop;
 public class Menu {
     private MenuItem[] items;
     private int itemCount;
-
+    
     /**
      * Creates an empty menu: initialize the array with capacity 10
      * and the counter with 0.

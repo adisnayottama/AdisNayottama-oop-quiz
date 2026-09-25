@@ -24,7 +24,6 @@ public class MenuItem {
     public MenuItem(String name, double price) {
         this.name = name;
         this.price = price;
-
     }
 
     public String getName() {
@@ -44,7 +43,6 @@ public class MenuItem {
     public void setPrice(double price) {
         if (price >= 0) {
             this.price = price;
-            
         }
     }
 }
