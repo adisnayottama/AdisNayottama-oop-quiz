@@ -44,6 +44,5 @@ public class Customer {
             this.name = name;
             
         }
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 }

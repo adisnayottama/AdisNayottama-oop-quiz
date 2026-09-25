@@ -46,6 +46,5 @@ public class MenuItem {
             this.price = price;
             
         }
-        throw new UnsupportedOperationException("Not implemented yet");
     }
 }
