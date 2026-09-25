@@ -7,7 +7,7 @@ public class Order {
 
     public Order(Customer customer) {
         this.customer = customer;
-        this.items = new OrderItem[10];
+        this.items = new OrderItem[10]; // Kapasitas 10
         this.itemCount = 0;
     }
 
@@ -15,8 +15,17 @@ public class Order {
         return customer;
     }
 
+    public OrderItem[] getItems() {
+        return items;
+    }
+
+    public int getItemCount() {
+        return itemCount;
+    }
+
     public void addItem(MenuItem item, int quantity) {
         if (itemCount < items.length) {
+            // Composition: Objek OrderItem dibuat di dalam method ini
             this.items[itemCount] = new OrderItem(item, quantity);
             itemCount++;
         }
@@ -33,7 +42,7 @@ public class Order {
     public double getFinalTotal() {
         double total = getTotal();
         if (total >= 100000) {
-            return total * 0.90; // Diskon 10%
+            return total * 0.90;
         }
         return total;
     }
