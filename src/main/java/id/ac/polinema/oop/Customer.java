@@ -11,6 +11,8 @@ package id.ac.polinema.oop;
  * (all fields must be private).
  */
 public class Customer {
+    private String id;
+    private  String name;
 
     /**
      * Creates a customer and stores both parameters into the fields.
@@ -19,15 +21,18 @@ public class Customer {
      * @param name       customer's name
      */
     public Customer(String customerId, String name) {
+        this.id = id;
+        this.name = name;
+
         throw new UnsupportedOperationException("Not implemented yet");
     }
 
     public String getCustomerId() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return id;
     }
 
     public String getName() {
-        throw new UnsupportedOperationException("Not implemented yet");
+        return name;
     }
 
     /**
@@ -37,6 +42,9 @@ public class Customer {
      * @param name new name
      */
     public void setName(String name) {
+        if (condition) {
+            
+        }
         throw new UnsupportedOperationException("Not implemented yet");
     }
 }
