@@ -40,6 +40,7 @@ public class Customer {
      * @param name new name
      */
     public void setName(String name) {
+
         if (name != null && !name.isBlank()) {
             this.name = name;
         }
